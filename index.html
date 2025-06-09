@@ -1,8 +1,115 @@
-<html>
-  <head>
-    <title>Devcat Studios</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Devcat Studios</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Geist&family=Silkscreen&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #121212;
+      color: #eee;
+      font-family: 'Geist', sans-serif;
+    }
+    header, footer {
+      background: #1f1f1f;
+      padding: 1.5em;
+      text-align: center;
+    }
+    header h1, h2, h3 {
+      font-family: 'Silkscreen', cursive;
+      letter-spacing: 1px;
+      transition: transform 0.3s ease;
+    }
+    h1:hover, h2:hover, h3:hover {
+      transform:scale(1.01);
+    }
+    main {
+      padding: 2em;
+      max-width: 850px;
+      margin: auto;
+    }
+    a {
+      color: #8ab4f8;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+    .card {
+      background: #222;
+      padding: 1em;
+      margin: 1.5em 0;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform:scale(1.05);
+    }
+    ul {
+      padding-left: 1.5em;
+      text-align: left;
+    }
+    footer p {
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header>
     <h1>Devcat Studios</h1>
-  </body>
+    <p><em>Development at its peak. 🐾</em></p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About</h2>
+      <p>We're a small developer group (based in "Antarctica" 🧊) working on bots, Discourse tools, and weird projects. All code is proudly CAT Licensed. 😼</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="card">
+        <h3><a href="https://github.com/Devcat-Studios/discourse-extras">discourse‑extras</a></h3>
+        <p>Custom JavaScript improvements for Discourse forums. Forked & maintained by Devcat‑Studios.</p>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/ethandacat/bot-beta">bot‑beta</a></h3>
+        <p>Python Discourse bot with AI replies, XKCD integration, code runner, and more.</p>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/ethandacat/editcat">editcat</a></h3>
+        <p>A browser tool to edit websites on-the-fly with visual UI editing. v0.2.0 available.</p>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/ethandacat/hacker">Hacker Series</a></h3>
+        <p>Text-based typing and console simulation game. Multiple chaotic versions:</p>
+        <ul>
+          <li><a href="https://github.com/ethandacat/hacker/blob/main/hacker1.py">Hacker 1</a> – The original game</li>
+          <li><a href="https://github.com/ethandacat/hacker/blob/main/hacker2.py">Hacker 2</a> – New typing logic</li>
+          <li><a href="https://github.com/ethandacat/hacker/blob/main/hacker3.py">Hacker 3</a> – More madness</li>
+          <li><a href="https://github.com/ethandacat/hacker/blob/main/hacker3.5.py">Hacker 3.5</a> – Full chaos mode</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Visit us on GitHub → <a href="https://github.com/Devcat-Studios">@Devcat-Studios</a> & <a href="https://github.com/ethandacat">@ethandacat</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Devcat Studios. All code CAT Licensed 🐱</p>
+  </footer>
+</body>
 </html>
